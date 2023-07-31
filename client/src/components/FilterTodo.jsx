@@ -9,6 +9,7 @@ const FilterTodo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("1")
     dispatch(todoActions.filterTodo(term));
     dispatch(searchActions.searchStart(term));
     setTerm("");
